@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #2C2F33;
+    margin: 0;
+    padding: 0;
+    
+    user-select: none;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+.muted {
+    cursor:pointer;
+    padding: 10px 20px;
+    background:white;
+    color: black;
+    border-radius: 4px;
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+}
+  
+video::-webkit-media-controls {
+    display: none;
+}
+
+video {
+    opacity: 0.1%;
+    z-index: 0;
+}
+
+.hint svg {
+    z-index: -1;
+    position: absolute; 
+
+    left: 50%; 
+    top: 45%; 
+
+    opacity: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hint span {
+    font-family: 'Monsterrat', sans-serif;
+    
+    z-index: -1;
+    position: absolute; 
+
+    left: 50%; 
+    top: 60%; 
+    
+    opacity: 50%;
+    transform: translate(-50%, -50%);
+
+    color: black;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+video:focus {
+    opacity: 100%;
+}
