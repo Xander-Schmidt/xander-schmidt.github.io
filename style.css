@@ -35,6 +35,9 @@ video::-webkit-media-controls {
 video {
     opacity: 0.1%;
     z-index: 0;
+    
+    width: 100%;
+    height: auto;
 }
 
 .hint svg {
